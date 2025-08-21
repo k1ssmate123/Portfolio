@@ -1,0 +1,32 @@
+.header_navbar {
+  border-top: 6px ridge transparent; /* ridge + átlátszó */
+}
+
+.navbar,
+.navbar-default {
+  background-image: var(
+    --navbar-background
+  ) !important; /* override background image gradient w/ flat color */
+}
+
+.header_navbar .nav-link,
+.header-brand {
+  color: var(--font-color) !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header_navbar .nav-link:hover,
+.header_navbar .nav-link:focus {
+  color: var(--blue-color) !important; /* pl. narancs hoverre */
+}
+
+.header_navbar .nav-link.active {
+  color: gray !important; /* ha aktív menüelem */
+}
+
+.header-lang {
+  width: 30px;
+  padding-left: 5px;
+  object-fit: cover;
+}

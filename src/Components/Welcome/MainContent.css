@@ -1,0 +1,56 @@
+.main_container {
+  color: var(--font-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-top: 5%;
+  padding-left: 20rem;
+  padding-right: 16px;
+  max-width: 1280px;
+}
+
+.main_container h2 {
+  font-weight: bolder !important;
+  font-size: 72px !important;
+}
+
+.main_container h3 {
+  font-size: 50px !important;
+}
+
+#name {
+  font-size: 102px;
+  font-weight: bold;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  background-color: var(--darkblue-color);
+  background: var(--name-color);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main_button {
+  height: 65px;
+  color: var(--font-color);
+  font-weight: bold;
+  min-width: 200px;
+  max-width: 300px;
+  border: 5px solid var(--blue-color);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main_button:hover {
+  background-color: var(--blue-color);
+  color: var(--black-text);
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .main_container {
+    padding: 1em;
+  }
+}

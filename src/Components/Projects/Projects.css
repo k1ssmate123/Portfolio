@@ -1,0 +1,60 @@
+.projectcard_container {
+  background-color: var(--darkblue-color);
+  color: var(--black-text);
+  height: 100%;
+  padding: 20px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectcard_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projectcard_container h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.projectcard_container p {
+  margin: 0;
+}
+
+.projectcard_badge {
+  align-self: flex-start;
+}
+
+.projectcard_button {
+  margin-top: 20px; /* top margin csökkentve, alul helyezkedik el */
+  height: 65px;
+  color: var(--black-text);
+  font-weight: bold;
+  min-width: 200px;
+  max-width: 300px;
+  border: 5px solid var(--black-text);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.projectcard_button:hover {
+  background-color: var(--black-text);
+  color: var(--font-color);
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .projectcard_container {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .projectcard_badge {
+    gap: 15px;
+  }
+}

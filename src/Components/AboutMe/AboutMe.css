@@ -1,0 +1,5 @@
+.about_description {
+  color: var(--font-color);
+  text-align: justify !important;
+  font-size: large;
+}
