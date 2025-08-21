@@ -1,5 +1,5 @@
 {
-  "short_name": "Kiss Máté portfolio",
+  "short_name": "Kiss Máté Portfolio",
   "name": "Portfolio of Kiss Máté",
   "icons": [
     {
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo  .png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
     }

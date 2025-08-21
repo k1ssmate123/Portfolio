@@ -2,7 +2,7 @@ const translations = {
   en: {
     about: "About Me",
     projects: "Projects",
-    contact: "Contact me",
+    contact: "Contact Me",
     toolbox: "Toolbox",
     introduction: (
       <>
@@ -24,6 +24,9 @@ const translations = {
       </>
     ),
     srcCodeBtn: "Source Code",
+    others: "Others",
+    email: "Send me an email!",
+    reachOut: "Or reach out to me here:",
   },
   hu: {
     about: "Rólam",
@@ -51,6 +54,9 @@ const translations = {
       </>
     ),
     srcCodeBtn: "Forráskód",
+    others: "Egyéb",
+    email: "Küldj egy levelet!",
+    reachOut: "Vagy üzenj itt:",
   },
 };
 

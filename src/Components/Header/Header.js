@@ -27,6 +27,21 @@ function Header({ lightMode, toggleLigthMode }) {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav ms-auto" />
+        <ToggleButton
+          value="check"
+          selected={lightMode}
+          onChange={() => toggleLigthMode()}
+        >
+          {isLightModeOn()}
+        </ToggleButton>
+
+        <ToggleButton
+          value="check"
+          selected={language}
+          onChange={toggleLanguage}
+        >
+          <LanguageIcon />
+        </ToggleButton>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#about">{translations[language].about}</Nav.Link>
@@ -39,21 +54,6 @@ function Header({ lightMode, toggleLigthMode }) {
             <Nav.Link href="#contact">
               {translations[language].contact}
             </Nav.Link>
-            <ToggleButton
-              value="check"
-              selected={lightMode}
-              onChange={() => toggleLigthMode()}
-            >
-              {isLightModeOn()}
-            </ToggleButton>
-
-            <ToggleButton
-              value="check"
-              selected={language}
-              onChange={toggleLanguage}
-            >
-              <LanguageIcon />
-            </ToggleButton>
           </Nav>
         </Navbar.Collapse>
       </Container>

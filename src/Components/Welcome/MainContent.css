@@ -33,6 +33,10 @@
 }
 
 .main_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   height: 65px;
   color: var(--font-color);
   font-weight: bold;
@@ -41,12 +45,16 @@
   border: 5px solid var(--blue-color);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease,
+    border-radius 0.3s ease;
 }
 
 .main_button:hover {
   background-color: var(--blue-color);
   color: var(--black-text);
-  border-radius: 5px;
+
+  transform: scale(1.05);
 }
 
 @media (max-width: 800px) {

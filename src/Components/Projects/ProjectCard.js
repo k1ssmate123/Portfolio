@@ -20,10 +20,13 @@ function ProjectCard({ title, description, codelink, picture, language }) {
               {language}
             </Badge>
           </div>
-          <a href={codelink} target="_blank" rel="noreferrer">
-            <button className="projectcard_button">
-              {translations[siteLanguage].srcCodeBtn} <GitHubIcon />
-            </button>
+          <a
+            href={codelink}
+            target="_blank"
+            rel="noreferrer"
+            className="projectcard_button"
+          >
+            {translations[siteLanguage].srcCodeBtn} <GitHubIcon />
           </a>
         </div>
       </Col>

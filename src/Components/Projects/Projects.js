@@ -17,8 +17,8 @@ function Projects() {
   const { language, translations } = useLanguage();
 
   return (
-    <Slide>
-      <section id="projects" className="page">
+    <Slide triggerOnce>
+      <section id="projects">
         <h1>{translations[language].projects}</h1>
         <Container>
           {data.map((repo) => (

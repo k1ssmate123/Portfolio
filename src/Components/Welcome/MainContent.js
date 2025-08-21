@@ -6,7 +6,7 @@ import { Slide } from "react-awesome-reveal";
 function MainContent() {
   const { language, translations } = useLanguage();
   return (
-    <Slide>
+    <Slide triggerOnce>
       <section className="main_container page">
         {translations[language].introduction}
         <h2 id="name">Kiss Máté</h2>
@@ -14,11 +14,9 @@ function MainContent() {
           href="https://github.com/k1ssmate123"
           rel="noreferrer"
           target="_blank"
+          className="main_button"
         >
-          <button className="main_button" variant="outline-success">
-            <GitHubIcon />
-            {} {translations[language].githubBtn}
-          </button>
+          <GitHubIcon /> {translations[language].githubBtn}
         </a>
       </section>
     </Slide>

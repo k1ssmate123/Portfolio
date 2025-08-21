@@ -31,22 +31,35 @@
 }
 
 .projectcard_button {
-  margin-top: 20px; /* top margin csökkentve, alul helyezkedik el */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
   height: 65px;
-  color: var(--black-text);
-  font-weight: bold;
   min-width: 200px;
   max-width: 300px;
+  padding: 0 20px;
+
+  color: var(--black-text);
+  font-weight: bold;
+  text-decoration: none;
   border: 5px solid var(--black-text);
-  border-radius: 10px;
+  border-radius: 12px;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
 }
 
 .projectcard_button:hover {
+  transform: translateY(-1px) scale(1.03);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
   background-color: var(--black-text);
   color: var(--font-color);
-  border-radius: 5px;
 }
 
 @media (max-width: 800px) {

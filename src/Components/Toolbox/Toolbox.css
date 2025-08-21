@@ -1,0 +1,43 @@
+.toolbox_Title {
+  text-align: center;
+  font-weight: bold;
+}
+
+#toolbox {
+  padding-top: 150px;
+}
+
+.toolbox_img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.toolbox_imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.toolbox_imgContainer img:hover {
+  transform: scale(1.1);
+
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .toolbox_img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .toolbox_img {
+    width: 50px;
+    height: 50px;
+  }
+}

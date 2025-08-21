@@ -10,7 +10,7 @@ function AboutMe() {
   const { language, translations } = useLanguage();
   return (
     <Slide>
-      <section id="about" className="about_container page">
+      <section id="about" className="about_container">
         <h1> {translations[language].about}</h1>
         <Container>
           <Row>

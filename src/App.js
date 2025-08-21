@@ -6,6 +6,8 @@ import MainContent from "./Components/Welcome/MainContent";
 import Projects from "./Components/Projects/Projects";
 import { LanguageProvider } from "./Hooks/languageContext";
 import { motion, useScroll } from "framer-motion";
+import Toolbox from "./Components/Toolbox/Toolbox";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   const [lightMode, setLightMode] = useState(false);
@@ -44,7 +46,11 @@ function App() {
         <div className="page-break"></div>
         <AboutMe />
         <div className="page-break"></div>
+        <Toolbox />
+        <div className="page-break"></div>
         <Projects />
+        <div className="page-break"></div>
+        <Contact />
       </div>
     </LanguageProvider>
   );
